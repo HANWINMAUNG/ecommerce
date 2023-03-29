@@ -19,7 +19,7 @@ CREATE TABLE `customers` (
   `phone` varchar(255) DEFAULT NULL,
   `status` tinyint DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `discounts` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -31,7 +31,7 @@ CREATE TABLE `discounts` (
   PRIMARY KEY (`id`),
   KEY `product_id` (`product_id`),
   CONSTRAINT `discounts_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `orders` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -40,7 +40,7 @@ CREATE TABLE `orders` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `products` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -52,13 +52,13 @@ CREATE TABLE `products` (
   `expiry_date` date DEFAULT NULL,
   `image_one` varchar(255) DEFAULT NULL,
   `image_two` varchar(255) DEFAULT NULL,
-  `image_three` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `image_three` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `shop_id` (`shop_id`),
   CONSTRAINT `products_ibfk_1` FOREIGN KEY (`shop_id`) REFERENCES `shops` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `shop_sliders` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -69,7 +69,7 @@ CREATE TABLE `shop_sliders` (
   PRIMARY KEY (`id`),
   KEY `shop_id` (`shop_id`),
   CONSTRAINT `shop_sliders_ibfk_1` FOREIGN KEY (`shop_id`) REFERENCES `shops` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `shops` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -86,7 +86,7 @@ CREATE TABLE `shops` (
   PRIMARY KEY (`id`),
   KEY `partner_id` (`partner_id`),
   CONSTRAINT `shops_ibfk_1` FOREIGN KEY (`partner_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `users` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -100,7 +100,7 @@ CREATE TABLE `users` (
   `updated_at` datetime DEFAULT NULL,
   `phone` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `customers` (`id`, `name`, `email`, `password`, `address`, `profile`, `created_at`, `updated_at`, `phone`, `status`) VALUES
 (1, 'hanwinmaun', 'ma@gmail.com', 'd41d8cd98f00b204e9800998ecf8427e', '                                                                                                                                       hfdhfdhfalhfdjhfa;jf                                                                                                                                    ', 'form_images/1680128609', '2023-03-20 07:35:54', '2023-03-29 22:23:29', '09761545726', 1);
