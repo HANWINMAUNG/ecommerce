@@ -1,21 +1,21 @@
-<?php include (base_path("views/backend/layouts/header.view.php")); ?>
+<?php include(base_path("views/backend/layouts/header.view.php")); ?>
        <h3>Shops</h3>
 <div class="text-right">
-<?php if(session('auth_user')['is_admin']==1) : ?>
-       <a href="/shop/create" class="btn btn-dark round mb-5">Shop create</a>
-       <?php endif;?>
-</div>
+    <?php if(session('auth_user')['is_admin']==1) : ?>
+        <a href="/shop/create" class="btn btn-dark round mb-5">Shop create</a>
+        <?php endif;?>
+    </div>
 
 
        <div class="row" id="table-inverse">
   <div class="col-12">
     <div class="card">
       <div class="card-header">
-       
+
       </div>
-      
+
         <!-- table with dark -->
-        
+
         <div class="m-50 px-5 pb-5 " >
           <table class="footer"  id="data_table"  >
             <thead>
@@ -29,7 +29,7 @@
                 <th>STANDARD</th>
                 <th>PUBLIC</th>
                 <th width="20%">ACTION</th>
-                
+
               </tr>
             </thead>
             <tbody>
@@ -45,28 +45,23 @@
                   <td><?=$shop['public']?></td>
                   <td>
                   <?php if(getAuthUser()['is_admin'] ==1):?>
-                    <a href="/shop/edit?id=<?= $shop['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i>Edit</a>
-                   
-                     
-                    <a href="/shop/delete?id=<?= $shop['id']?>"  class="btn btn-danger btn-sm"><i data-feather="delete"></i>Delete</a>
+                    <a href="/shop/edit?id=<?= $shop['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
+
+                    <a href="/shop/delete?id=<?= $shop['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">
                   //     <input type="hidden" name="id" value="">
                   //   <button type="submit" class="btn btn-danger btn-sm"><i data-feather="delete"></i>Delete</button>
                   //     </form> -->
-                   </td> 
-                  
+                   </td>
+
               </tr>
               <?php endforeach ;?>
             </tbody>
-            
+
           </table>
-          
-        </div>  
-       
-        <?php include (base_path("views/backend/layouts/footer.view.php")); ?>  
 
-           
+        </div>
 
-         
+        <?php include(base_path("views/backend/layouts/footer.view.php")); ?>

@@ -1,4 +1,4 @@
-<?php include (base_path("views/backend/layouts/header.view.php")); ?>
+<?php include(base_path("views/backend/layouts/header.view.php")); ?>
 
 <div class="text-right mb-4"><a href="/shop_slider" class="btn btn-dark round">Back</a></div>
 
@@ -11,42 +11,38 @@
             <div class="card-content">
             <div class="card-body">
 
-                <?php if(isset($errors)) :?>
-                    <div class="alert alert-danger">
-                        <ul>
-                            <?php foreach($errors as $error) : ?>
-                                <li><?= $error?></li>
-                                <?php endforeach ;?>
-                            </ul>
-                            </div>
-                    <?php endif ; ?>
+            <?php if(isset($_SESSION['error_messages'])) :?>
+                <div class="alert alert-danger">
+                    <ul>
+                        <?php foreach($_SESSION['error_messages'] as $error) : ?>
+                            <li><?= $error?></li>
+                        <?php endforeach ;?>
+                    </ul>
+                </div>
+            <?php endif; ?>
 
-                <form class="form form-vertical"   method="POST" action="/shop_slider" enctype="multipart/form-data">
+                <form class="form form-vertical" method="POST" action="/shop_slider" enctype="multipart/form-data">
                 <div class="form-body">
                     <div class="row">
-                    
-                   
+
                     <div class="col-12">
                         <div class="form-group has-icon-left">
                             <label for="first-name-icon">Shop_name</label>
                             <div class="position-relative">
-                            
-                            <select name="shop_id" class="form-select " id="basicSelect">
-                                               <?php foreach($shops as $shop): ?>
-                                               <option value="<?=$shop['id']?>"><?= $shop['name']?></option>
-                                               <?php endforeach ;?>
-                                        </select>
-                            
+                                <select name="shop_id" class="form-select " id="basicSelect">
+                                    <?php foreach($shops as $shop): ?>
+                                        <option value="<?=$shop['id']?>"><?= $shop['name']?></option>
+                                    <?php endforeach ;?>
+                                </select>
+                            </div>
                         </div>
-                       
-                        
                     </div>
-                    </div>
+
                     <div class="form-group has-icon-left">
                             <label for="first-name-icon">image</label>
                             <div class="position-relative">
                                 <input type="file" name="image[]" class="form-control" placeholder="Input with icon left" id="first-name-icon" multiple>
-                           
+
                                 <div class="form-control-icon">
                                     <i data-feather="image"></i>
                                 </div>
@@ -66,9 +62,6 @@
         </div>
     </div>
 
-    
-
-    <?php include (base_path("views/backend/layouts/footer_info.php")); ?>         
 
 
-           
+    <?php include(base_path("views/backend/layouts/footer_info.php")); ?>

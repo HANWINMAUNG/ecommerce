@@ -1,7 +1,5 @@
 <?php
 
-use Core\Response;
-
 function dd($value)
 {
     echo "<pre>";
@@ -11,63 +9,74 @@ function dd($value)
     die();
 }
 
+function asset_image($path)
+{
+    return '/' . $path;
+}
 
-function base_path($path){
-    return BASE_PATH.$path;
-  }
-  
-  function view($path,$attribute = []){
+function base_path($path)
+{
+    return BASE_PATH . $path;
+}
+
+function view($path, $attribute = [])
+{
     extract($attribute);
-    require base_path('views/'.$path);
-  }
+    require base_path('views/' . $path);
+}
 
-  function with($key,$message){
+function with($key, $message)
+{
     $_SESSION[$key]=$message;
+}
 
+function session($key)
+{
+    if (!is_null($_SESSION[$key])) {
+        return $_SESSION[$key];
     }
-      
-   function session($key)
-   {
+}
 
-    if(!is_null($_SESSION[$key]))
-     {
-
-    return $_SESSION[$key];
-   }  
-  }
-
-  function redirectTo($path='')
-  {
+function redirectTo($path='')
+{
     header("location: /{$path}");
     exit();
-  }
+}
 
-  function checkAuth()
+function checkAuth()
 {
-  return isset($_SESSION['auth_user']);
+    return isset($_SESSION['auth_user']);
 }
 
 function getAuthUser()
 {
-  if(checkAuth()){
-    return $_SESSION['auth_user'];
-  }
+    if (checkAuth()) {
+        return $_SESSION['auth_user'];
+    }
 
-  return null;
+    return null;
 }
-function bcrypt($value){
-  return md5($value);
+
+function bcrypt($value)
+{
+    return md5($value);
 }
+
 function setError($message)
 {
-$errors[]=$message;
+    $errors[] = $message;
 
-$_SESSION['errors'] = $errors;
+    $_SESSION['errors'] = $errors;
 }
 
 function setSuccessMessage($message)
 {
-  $_SESSION['success'] = $message;
+    $_SESSION['success'] = $message;
+}
+
+function withError($errors)
+{
+    $_SESSION['error_messages'] = $errors;
 }
 
 function abort($code = 404)
@@ -78,5 +87,3 @@ function abort($code = 404)
 
     die();
 }
-
-

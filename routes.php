@@ -29,7 +29,7 @@ $router->patch('/admin/accounts','controllers/backend/admin/account/update.php')
 
 $router->get('/shop','controllers/backend/admin/shop/index.php');
 
-$router->get('/shop/create','controllers/backend/admin/shop/create.php');
+$router->get('/shop/create', 'controllers/backend/admin/shop/create.php');
 
 $router->post('/shop','controllers/backend/admin/shop/store.php');
 

@@ -35,10 +35,9 @@
                             <div class="position-relative mt-2 mb-2">
 
                             <select name="is_admin" class="form-select " id="basicSelect">
-                                            <option value="1">Admin</option>
-                                            <option value="0">Partner</option>
-                                        </select>
-
+                                <option value="1">Admin</option>
+                                <option value="0">Partner</option>
+                            </select>
                         </div>
 
                             <div class="form-group has-icon-left">
@@ -60,7 +59,7 @@
                                     </a>
                                 </div>
                                 <div class="position-relative">
-                                    <input name="password" type="text" class="form-control" id="password">
+                                    <input name="password" type="password" class="form-control" id="password">
                                     <div class="form-control-icon">
                                         <i data-feather="lock"></i>
                                     </div>
@@ -94,12 +93,11 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="/assets/backend/js/feather-icons/feather.min.js"></script>
     <script src="/assets/backend/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/assets/backend/vendors/chartjs/Chart.min.js"></script>
 
     <script src="/assets/backend/js/app.js"></script>
 
-    <script src="/assets/backend/vendors/chartjs/Chart.min.js"></script>
     <!-- <script src="/assets/backend/vendors/apexcharts/apexcharts.min.js"></script> -->
-
     <!-- <script src="/assets/backend/js/vendors.js"></script> -->
 
     <script src="/assets/backend/js/main.js"></script>
