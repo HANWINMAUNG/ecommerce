@@ -121,10 +121,10 @@ for (var i = 0; i < sidebarToggler.length; i++) {
 } // Perfect Scrollbar INit
 
 
-if (typeof PerfectScrollbar == 'function') {
-  var container = document.querySelector(".sidebar-wrapper");
-  var ps = new PerfectScrollbar(container);
-}
+// if (typeof PerfectScrollbar == 'function') {
+//   var container = document.querySelector(".sidebar-wrapper");
+//   var ps = new PerfectScrollbar(container);
+// }
 
 window.onload = function () {
   var w = window.innerWidth;
