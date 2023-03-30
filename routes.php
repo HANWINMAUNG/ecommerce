@@ -91,7 +91,7 @@ $router->patch('/shop_slider','controllers/backend/admin/shop_slider/update.php'
 
 //discount
 
-$router->get('/discount','controllers/backend/admin/shop_slider/index.php');
+$router->get('/discount','controllers/backend/admin/discount/index.php');
 
 $router->get('/discount/create','controllers/backend/admin/discount/create.php');
 
