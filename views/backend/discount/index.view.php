@@ -44,10 +44,10 @@
                         <?php endif ;?> 
                   </td>
                   <td>
-                    <a href="/admin/accounts/edit?id=<?= $user['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i>Edit</a>
+                    <a href="/admin/accounts/edit?id=<?= $user['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
                     <?php if(getAuthUser()['email'] !== $user['email']):?>
                      
-                    <a href="/admin/accounts/delete?id=<?= $user['id']?>"  class="btn btn-danger btn-sm"><i data-feather="delete"></i>Delete</a>
+                    <a href="/admin/accounts/delete?id=<?= $user['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">

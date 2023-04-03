@@ -50,21 +50,26 @@
                     <div class="form-group has-icon-left">
                             <label for="first-name-icon">image</label>
                             <div class="position-relative">
-                                <input type="file" name="image[]" class="form-control" placeholder="Input with icon left" id="first-name-icon" multiple>
-                                <div class="form-control-icon">
-                                    <i data-feather="image"></i>
+                                       <input type="file" name="image[]" class="form-control" placeholder="Input with icon left" id="first-name-icon" multiple>
+                             <div class="form-control-icon">
+                            <i data-feather="image"></i>
                                 </div>
                             </div>
                             <div>
-                                <?php foreach($slider_images as $slider_image) :?>
+                            
+                             <?php foreach($slider_images as $slider_image) :?>
+                                    <div class="">
+                                    <a href="/shop_slider/delete_detail?id=<?= $slider_image['id']?>&&shop_id=<?= $slider_image['shop_id']?>"  class="text-danger" style=" "><i data-feather="x-circle"></i></a>
                                     <img src="<?= asset_image($slider_image['image']) ?>" alt="Slider Image" style="width: 100px; height: 100px; margin:20px 20px 0 0; border: 1px solid #ccc; padding: 2px; border-radius: 10px; background: #fafafa; object-fit: contain;">
-                                <?php endforeach; ?>
-                            </div>
+                                   </div>
+                            <?php endforeach; ?>
+                                
+                            </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
                         </div>
                     </div>
                     <div class="col-12 d-flex justify-content-end">
                         <button type="submit" class="btn btn-primary mr-1 mb-1">Submit</button>
-                        <button type="reset" class="btn btn-light-secondary mr-1 mb-1">Reset</button>
+                        <button type="reset" class="btn btn-light-secondary mr-1 mb-1">Cancel</button>
                     </div>
                     </div>
                 </div>
@@ -75,20 +80,7 @@
         </div>
     </div>
 
-                     <p class="text-danger mt-2 mb-2">*Please must be select you profile!</p>
-                     <div class="col-12 d-flex justify-content-center mt-2 ">
-                        <button type="submit" class="btn btn-primary btn-sm mr-2">Confirm</button>
-                        <a href="/shop" class="btn btn-secondary btn-sm">Cancel</a>
-                    </div>
-                    </div>
-                </div>
-                </form>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-
+                    
 
 
     <?php include(base_path("views/backend/layouts/footer_info.php")); ?>

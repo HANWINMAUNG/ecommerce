@@ -5,7 +5,7 @@ return
     'database'=>[
         'host'=> 'localhost',
         'post'=> 3306,
-        'dbname'=> 'hwm_ecommerce',
+        'dbname'=> 'php_ecommerce',
         'charset'=> 'utf8mb4',
     ]
 ];

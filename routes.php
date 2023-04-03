@@ -83,6 +83,8 @@ $router->post('/shop_slider','controllers/backend/admin/shop_slider/store.php');
 
 $router->get('/shop_slider/delete','controllers/backend/admin/shop_slider/delete.php');
 
+$router->get('/shop_slider/delete_detail','controllers/backend/admin/shop_slider/delete_detail.php');
+
 $router->delete('/shop_slider/destroy','controllers/backend/admin/shop_slider/destroy.php');
 
 $router->get('/shop_slider/edit','controllers/backend/admin/shop_slider/edit.php');

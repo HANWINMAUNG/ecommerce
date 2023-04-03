@@ -40,10 +40,10 @@
 
                   <td>
                   <?php if(getAuthUser()['is_admin'] ==1):?>
-                    <a href="/shop_slider/edit?shop_id=<?= $shop_slider['shop_id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i>Edit</a>
+                    <a href="/shop_slider/edit?shop_id=<?= $shop_slider['shop_id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
 
 
-                    <a href="/shop_slider/delete?shop_id=<?= $shop_slider['shop_id']?>"  class="btn btn-danger btn-sm"><i data-feather="delete"></i>Delete</a>
+                    <a href="/shop_slider/delete?shop_id=<?= $shop_slider['shop_id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">

@@ -59,7 +59,7 @@
                     
                     <div class="col-12 d-flex justify-content-end">
                         <button type="submit" class="btn btn-primary mr-1 mb-1">Submit</button>
-                        <button type="reset" class="btn btn-light-secondary mr-1 mb-1">Reset</button>
+                        <button type="reset" class="btn btn-light-secondary mr-1 mb-1">Cancel</button>
                     </div>
                     </div>
                 </div>

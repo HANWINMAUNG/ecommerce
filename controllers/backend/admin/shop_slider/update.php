@@ -21,7 +21,30 @@ if (checkAuth()) {
         $errors[] = 'Maximum no of slider is 5.';
     }
 
-    dd('less than 5');
-} else {
-    abort();
+    if (empty($errors)) {
+        $names = $_FILES['image']['name'];
+    
+        foreach ($names as $key => $name) {
+            $image_name = "form_images/slider/" . date('U') . str_replace(' ', '_', $_FILES['image']['name'][$key]);
+            $tmp_name = $_FILES['image']['tmp_name'][$key];
+    
+            move_uploaded_file($tmp_name, $image_name);
+    
+            $db->query(
+                "INSERT INTO shop_sliders ( shop_id, image) VALUES (:shop_id,:image)",
+                [
+                    'shop_id' => $_POST['shop_id'],
+                    'image' => $image_name,
+                ]
+            );
+        }
+    
+        with('success', 'An account is successfully updated!');
+        redirectTo('shop_slider');
+   
+}
+ else {
+   setError($errors);
+   redirectTo( "shop_slider/edit?shop_id=".$POST['shop_id']);
+ }
 }

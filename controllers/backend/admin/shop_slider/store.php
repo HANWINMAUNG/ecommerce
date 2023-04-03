@@ -39,3 +39,4 @@ if (empty($errors)) {
     withError($errors);
     redirectTo('shop_slider/create');
 }
+

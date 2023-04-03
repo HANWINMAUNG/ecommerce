@@ -46,10 +46,10 @@
                   <td><?=$product['expiry_date']?></td>
                   <td>
                   <?php if(getAuthUser()['is_admin'] ==1):?>
-                    <a href="/product/edit?id=<?= $product['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i>Edit</a>
+                    <a href="/product/edit?id=<?= $product['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
                    
                      
-                    <a href="/product/delete?id=<?= $product['id']?>"  class="btn btn-danger btn-sm"><i data-feather="delete"></i>Delete</a>
+                    <a href="/product/delete?id=<?= $product['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">
