@@ -1,5 +1,5 @@
 <?php
-
+// $router->get('/','controllers/backend/admin/login.php');
 
 $router->get('/admin','controllers/backend/admin/index.php');
 

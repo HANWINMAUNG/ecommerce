@@ -12,7 +12,10 @@ if(checkAuth()){
 
 $products=$db->query("select * from products")->get();
 
-view("backend/discount/create.view.php",compact('products'));
+$shops=$db->query("select * from shops")->get();
+
+view("backend/discount/create.view.php",compact('products','shops'));
 
 }else
+
 abort();

@@ -22,14 +22,15 @@
     <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
     <script src="/assets/backend/vendors/chartjs/Chart.min.js"></script>
     <script src="/assets/backend/vendors/apexcharts/apexcharts.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/assets/backend/js/vendors.js"></script>
 
 <script src="/assets/backend/js/main.js"></script>
 
 
 
-    <script>    
+    <script>  
+   // Swal.fire('Any fool can use a computer')  
     // $(document).ready(function() {
     //     $('#data_table').DataTable();
     // });

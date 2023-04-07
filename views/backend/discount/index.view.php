@@ -1,9 +1,9 @@
 
 <?php include (base_path("views/backend/layouts/header.view.php")); ?>
      
-       <h2>Account</h2>
+       <h2>Discount</h2>
 <div class="text-right">
-       <a href="/discount/create" class="btn btn-dark round mb-5">Create </a>
+       <a href="/discount/create" class="btn btn-dark round mb-5"> Discount Create </a>
 </div>
 
 
@@ -22,32 +22,27 @@
               <tr>
               <th width="20%"class="text-align-center">#</th>
                 <th>PRODUCT NAME</th>
-                <th>EMAIL</th>
-                <th>DISCOUNT</th>
+                <th>SHOP NAME</th>
+                <th>DISCOUNT TYPE</th>
                 <th>AMOUNT</th>
                 <th width="20%">ACTION</th>
                 
               </tr>
             </thead>
             <tbody>
-              <?php foreach($users as $key=>$user): ?>
+              <?php foreach($discounts as $key=>$discount): ?>
                 <tr>
                   <th scope="row"><?=$key +1?></th>
-                  <td><?=$user['name']?></td>
-                  <td><?=$user['email']?></td>
-                  <td><?=$user['phone']?></td>
+                  <td><?=$discount['product_name']?></td>
+                  <td><?=$discount['shop_name']?></td>
+                  <td><?=$discount['discount_type']?></td>
+                  <td><?=$discount['amount']?></td>
                   <td>
-                    <?php if($user['is_admin']) : ?>
-                      <span class="badge bg-success">Admin</span>
-                      <?php else :?>
-                        <span class="badge bg-primary">Partner</span>
-                        <?php endif ;?> 
-                  </td>
-                  <td>
-                    <a href="/admin/accounts/edit?id=<?= $user['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
-                    <?php if(getAuthUser()['email'] !== $user['email']):?>
+                  <?php if(getAuthUser()['is_admin'] ==1):?>
+                    <a href="/discount/edit?id=<?= $discount['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
+                    
                      
-                    <a href="/admin/accounts/delete?id=<?= $user['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
+                    <a href="/discount/delete?id=<?= $discount['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">

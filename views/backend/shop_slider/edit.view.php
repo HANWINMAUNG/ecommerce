@@ -50,18 +50,21 @@
                     <div class="form-group has-icon-left">
                             <label for="first-name-icon">image</label>
                             <div class="position-relative">
-                                       <input type="file" name="image[]" class="form-control" placeholder="Input with icon left" id="first-name-icon" multiple>
+                                       <input type="file" name="image[]" class="form-control" placeholder="Input with icon left" id="image" multiple>
                              <div class="form-control-icon">
                             <i data-feather="image"></i>
                                 </div>
                             </div>
-                            <div>
+                            <div class="d-flex" style="gap:20px;margin-top:20px;">
                             
                              <?php foreach($slider_images as $slider_image) :?>
-                                    <div class="">
-                                    <a href="/shop_slider/delete_detail?id=<?= $slider_image['id']?>&&shop_id=<?= $slider_image['shop_id']?>"  class="text-danger" style=" "><i data-feather="x-circle"></i></a>
-                                    <img src="<?= asset_image($slider_image['image']) ?>" alt="Slider Image" style="width: 100px; height: 100px; margin:20px 20px 0 0; border: 1px solid #ccc; padding: 2px; border-radius: 10px; background: #fafafa; object-fit: contain;">
-                                   </div>
+                           <div class="position-relative" style="width:120px;height:120px;">
+                           <a href="/shop_slider/delete_detail?id=<?= $slider_image['id']?>&&shop_id=<?= $slider_image['shop_id']?>"  class="text-danger position-absolute" style="z-index:10;top:0;right:0;"><i data-feather="x-circle"></i></a>
+                                    <img src="<?= asset_image($slider_image['image']) ?>"  alt="Slider Image" style="width: 100%; height: 100%; border: 1px solid #ccc; padding: 2px; border-radius: 10px; background: #fafafa; object-fit: cover;">
+                                
+                                    
+                               
+                            </div>
                             <?php endforeach; ?>
                                 
                             </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
@@ -81,6 +84,6 @@
     </div>
 
                     
-
+ 
 
     <?php include(base_path("views/backend/layouts/footer_info.php")); ?>

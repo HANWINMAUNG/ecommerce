@@ -44,8 +44,9 @@
                         <?php endif ;?> 
                   </td>
                   <td>
+                  <?php if(getAuthUser()['is_admin'] ==1):?>
                     <a href="/admin/accounts/edit?id=<?= $user['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
-                    <?php if(getAuthUser()['email'] !== $user['email']):?>
+                   
                      
                     <a href="/admin/accounts/delete?id=<?= $user['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>

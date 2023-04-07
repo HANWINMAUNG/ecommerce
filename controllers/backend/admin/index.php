@@ -1,5 +1,6 @@
 <?php
 
+
 if (false !== checkAuth() && session('auth_user')['is_admin'] == 1) {
     view("backend/index.view.php");
 } elseif (false !== checkAuth() && session('auth_user')['is_admin'] == 0) {
