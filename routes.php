@@ -106,3 +106,19 @@ $router->delete('/discount/destroy','controllers/backend/admin/discount/destroy.
 $router->get('/discount/edit','controllers/backend/admin/discount/edit.php');
 
 $router->patch('/discount','controllers/backend/admin/discount/update.php');
+
+//categories
+
+$router->get('/category','controllers/backend/admin/category/index.php');
+
+$router->get('/category/create','controllers/backend/admin/category/create.php');
+
+$router->post('/category','controllers/backend/admin/category/store.php');
+
+$router->get('/category/delete','controllers/backend/admin/category/delete.php');
+
+$router->delete('/category/destroy','controllers/backend/admin/category/destroy.php');
+
+$router->get('/category/edit','controllers/backend/admin/category/edit.php');
+
+$router->patch('/category','controllers/backend/admin/category/update.php');

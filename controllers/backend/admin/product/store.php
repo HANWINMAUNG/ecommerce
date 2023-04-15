@@ -61,6 +61,7 @@ if(empty($errors)){
     with('success','An account is successfully created!');
    redirectTo('product');
 }else{
-    view("backend/product/create.view.php",["errors" => $errors]); 
+    withError($errors);
+    redirectTo('product/create');
 }
 

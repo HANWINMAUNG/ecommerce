@@ -72,6 +72,15 @@
                     </a>
                     
                 </li>
+
+                <li class="sidebar-item ">
+                    <a href="/category" class='sidebar-link'>
+                        <i data-feather="triangle" width="20"></i> 
+                        <span>Category</span>
+                    </a>
+                    
+                </li>
+
                 <li class="sidebar-item ">
                     <a href="/order" class='sidebar-link'>
                         <i data-feather="triangle" width="20"></i> 

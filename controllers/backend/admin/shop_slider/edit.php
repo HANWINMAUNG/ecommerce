@@ -1,5 +1,5 @@
 <?php
-dd($_GET);
+
 use Core\App;
 use Core\Database;
 
