@@ -13,4 +13,4 @@ $db->query("delete from discounts where id= :id", ['id'=>$_POST['id']]);
 
 with('success','Delete is successfully!');
 
-redirectTo('discount');
+redirectTo('admin/discount');

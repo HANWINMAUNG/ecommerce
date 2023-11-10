@@ -60,7 +60,7 @@ if(empty($errors)){
     ]); 
     
     setSuccessMessage('successfully updated!');
-    redirectTo('product');
+    redirectTo('admin/product');
 
 }
 else{
@@ -69,5 +69,5 @@ else{
 } 
 
 $_SESSION['errors'] = $errors;
-redirectTo('product/edit');
+redirectTo('admin/product/edit');
 exit();

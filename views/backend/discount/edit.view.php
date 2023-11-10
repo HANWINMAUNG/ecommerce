@@ -2,7 +2,7 @@
 
 <h3>Edit Discount</h3>
 <div class="text-right">
-       <a href="/discount" class="btn btn-dark round mb-5">Back</a>
+       <a href="/admin/discount" class="btn btn-dark round mb-5">Back</a>
 </div>
 
 

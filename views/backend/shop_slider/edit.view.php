@@ -2,7 +2,7 @@
 
 <h3>Edit Shop Slider</h3>
 <div class="text-right">
-       <a href="/shop_slider" class="btn btn-dark round mb-5">Back</a>
+       <a href="/admin/shop_slider" class="btn btn-dark round mb-5">Back</a>
 </div>
 
 

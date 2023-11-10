@@ -59,7 +59,7 @@ if(checkAuth()){
     
     
     setSuccessMessage('successfully updated!');
-    redirectTo('shop');
+    redirectTo('admin/shop');
 
 }
 else{
@@ -68,6 +68,6 @@ else{
 } 
 
 $_SESSION['errors'] = $errors;
-redirectTo('shop/edit');
+redirectTo('admin/shop/edit');
 exit();
 

@@ -2,14 +2,14 @@
        <h3>Products</h3>
 <div class="text-right">
 <?php if(session('auth_user')['is_admin']==1) : ?>
-       <a href="/product/create" class="btn btn-dark round mb-5">Product create</a>
+       <a href="/admin/product/create" class="btn btn-dark round mb-5">Product create</a>
        <?php endif;?>
 </div>
 
 
 
 
-       <div class="row" id="table-inverse">
+<div class="row" id="table-inverse">
   <div class="col-12">
     <div class="card">
       <div class="card-header">
@@ -46,10 +46,10 @@
                   <td><?=$product['expiry_date']?></td>
                   <td>
                   <?php if(getAuthUser()['is_admin'] ==1):?>
-                    <a href="/product/edit?id=<?= $product['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
+                    <a href="/admin/product/edit?id=<?= $product['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
                    
                      
-                    <a href="/product/delete?id=<?= $product['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
+                    <a href="/admin/product/delete?id=<?= $product['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">

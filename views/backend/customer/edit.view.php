@@ -3,7 +3,7 @@
    
        <h3>Edit Account</h3>
 <div class="text-right">
-       <a href="/customer" class="btn btn-dark round mb-5">Back</a>
+       <a href="/admin/customer" class="btn btn-dark round mb-5">Back</a>
 </div>
 
 <div class="col-12 col-md-12 ">
@@ -128,7 +128,7 @@
                     <div class="col-12 d-flex justify-content-center mt-2 ">
                         <button type="submit" class="btn btn-primary btn-sm mr-2">Confirm</button>
                         
-                        <a href="/customer" class="btn btn-secondary btn-sm">Cancel</a>
+                        <a href="/admin/customer" class="btn btn-secondary btn-sm">Cancel</a>
                     </div>
                     </div>
                 </div>

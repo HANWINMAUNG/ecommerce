@@ -1,6 +1,6 @@
 <?php include (base_path("views/backend/layouts/header.view.php")); ?>
 
-<div class="text-right mb-4"><a href="/customer" class="btn btn-dark round">Back</a></div>
+<div class="text-right mb-4"><a href="/admin/customer" class="btn btn-dark round">Back</a></div>
 
 <div class="col-12 col-md-12 ">
         <div class="card">

@@ -12,4 +12,4 @@ $db->query("DELETE FROM categories WHERE id= :id", ['id'=>$_POST['id']]);
 
 with('success','Delete is successfully!');
 
-redirectTo('category');
+redirectTo('admin/category');

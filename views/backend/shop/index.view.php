@@ -2,7 +2,7 @@
        <h3>Shops</h3>
 <div class="text-right">
     <?php if(session('auth_user')['is_admin']==1) : ?>
-        <a href="/shop/create" class="btn btn-dark round mb-5">Shop create</a>
+        <a href="/admin/shop/create" class="btn btn-dark round mb-5">Shop create</a>
         <?php endif;?>
     </div>
 
@@ -45,9 +45,9 @@
                   <td><?=$shop['public']?></td>
                   <td>
                   <?php if(getAuthUser()['is_admin'] ==1):?>
-                    <a href="/shop/edit?id=<?= $shop['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
+                    <a href="/admin/shop/edit?id=<?= $shop['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
 
-                    <a href="/shop/delete?id=<?= $shop['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
+                    <a href="/admin/shop/delete?id=<?= $shop['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">

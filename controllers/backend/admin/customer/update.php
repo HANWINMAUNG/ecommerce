@@ -53,7 +53,7 @@ if(checkAuth()){
    
     
     setSuccessMessage('successfully updated!');
-    redirectTo('customer');
+    redirectTo('admin/customer');
 
 }
 else{
@@ -62,6 +62,6 @@ else{
 } 
 
 $_SESSION['errors'] = $errors;
-redirectTo('customer/edit');
+redirectTo('admin/customer/edit');
 exit();
 

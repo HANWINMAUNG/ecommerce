@@ -38,35 +38,35 @@
                 </li>
 
                 <li class="sidebar-item ">
-                    <a href="/shop" class='sidebar-link'>
+                    <a href="/admin/shop" class='sidebar-link'>
                         <i data-feather="triangle" width="20"></i> 
                         <span>Shops</span>
                     </a>
                     
                 </li>
                 <li class="sidebar-item ">
-                    <a href="/product" class='sidebar-link'>
+                    <a href="/admin/product" class='sidebar-link'>
                         <i data-feather="triangle" width="20"></i> 
                         <span>Products</span>
                     </a>
                     
                 </li>
                 <li class="sidebar-item ">
-                    <a href="/customer" class='sidebar-link'>
+                    <a href="/admin/customer" class='sidebar-link'>
                         <i data-feather="triangle" width="20"></i> 
                         <span>Customer</span>
                     </a>
                     
                 </li>
                 <li class="sidebar-item ">
-                    <a href="/shop_slider" class='sidebar-link'>
+                    <a href="/admin/shop_slider" class='sidebar-link'>
                         <i data-feather="triangle" width="20"></i> 
                         <span>Shop Slider</span>
                     </a>
                     
                 </li>
                 <li class="sidebar-item ">
-                    <a href="/discount" class='sidebar-link'>
+                    <a href="/admin/discount" class='sidebar-link'>
                         <i data-feather="triangle" width="20"></i> 
                         <span>Discount</span>
                     </a>
@@ -74,7 +74,7 @@
                 </li>
 
                 <li class="sidebar-item ">
-                    <a href="/category" class='sidebar-link'>
+                    <a href="/admin/category" class='sidebar-link'>
                         <i data-feather="triangle" width="20"></i> 
                         <span>Category</span>
                     </a>
@@ -82,9 +82,16 @@
                 </li>
 
                 <li class="sidebar-item ">
-                    <a href="/order" class='sidebar-link'>
+                    <a href="/admin/order" class='sidebar-link'>
                         <i data-feather="triangle" width="20"></i> 
                         <span>Order</span>
+                    </a>
+                    
+                </li>
+                <li class="sidebar-item ">
+                    <a href="/admin/shipping" class='sidebar-link'>
+                        <i data-feather="triangle" width="20"></i> 
+                        <span>Shipping</span>
                     </a>
                     
                 </li>

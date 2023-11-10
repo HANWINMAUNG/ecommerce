@@ -2,7 +2,7 @@
        <h3>Products</h3>
 <div class="text-right">
 <?php if(session('auth_user')['is_admin']==1) : ?>
-       <a href="/category/create" class="btn btn-dark round mb-5">Category create</a>
+       <a href="/admin/category/create" class="btn btn-dark round mb-5">Category create</a>
        <?php endif;?>
 </div>
                 <div class="row" id="table-inverse">
@@ -32,10 +32,10 @@
                                 <td>
                                 <?php if(getAuthUser()['is_admin'] ==1):?>
 
-                                    <a href="/category/edit?id=<?= $category['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
+                                    <a href="/admin/category/edit?id=<?= $category['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
                                 
                                     
-                                    <a href="/category/delete?id=<?= $category['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
+                                    <a href="/admin/category/delete?id=<?= $category['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                                
                                     <?php endif ;?>
                                     

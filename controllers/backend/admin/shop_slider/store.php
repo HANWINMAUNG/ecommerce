@@ -1,6 +1,5 @@
 <?php
-
-
+ 
 use Core\App;
 use Core\Database;
 
@@ -34,9 +33,9 @@ if (empty($errors)) {
     }
 
     with('success', 'An account is successfully created!');
-    redirectTo('shop_slider');
+    redirectTo('admin/shop_slider');
 } else {
     withError($errors);
-    redirectTo('shop_slider/create');
+    redirectTo('admin/shop_slider/create');
 }
 

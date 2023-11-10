@@ -4,7 +4,7 @@
        <h2>Customer</h2>
 <div class="text-right">
 <?php if(session('auth_user')['is_admin']==1) : ?>
-       <a href="/customer/create" class="btn btn-dark round mb-5">Create Customer</a>
+       <a href="/admin/customer/create" class="btn btn-dark round mb-5">Create Customer</a>
        <?php endif;?>
 </div>
 
@@ -49,9 +49,9 @@
                   </td>
                   <td>
                   <?php if(getAuthUser()['is_admin'] ==1):?>
-                    <a href="/customer/edit?id=<?= $customer['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
+                    <a href="/admin/customer/edit?id=<?= $customer['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
                     
-                    <a href="/customer/delete?id=<?= $customer['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
+                    <a href="/admin/customer/delete?id=<?= $customer['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">

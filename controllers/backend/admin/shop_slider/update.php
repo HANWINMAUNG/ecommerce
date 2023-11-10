@@ -40,11 +40,11 @@ if (checkAuth()) {
         }
     
         with('success', 'An account is successfully updated!');
-        redirectTo('shop_slider');
+        redirectTo('admin/shop_slider');
    
 }
  else {
    setError($errors);
-   redirectTo( "shop_slider/edit?shop_id=".$POST['shop_id']);
+   redirectTo( "admin/shop_slider/edit?shop_id=".$POST['shop_id']);
  }
 }

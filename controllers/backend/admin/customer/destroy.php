@@ -13,4 +13,4 @@ $db->query("delete from customers where id= :id", ['id'=>$_POST['id']]);
 
 with('success','Delete is successfully!');
 
-redirectTo('customer');
+redirectTo('admin/customer');

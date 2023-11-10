@@ -2,7 +2,7 @@
        <h3>Shop Sliders</h3>
 <div class="text-right">
 <?php if(session('auth_user')['is_admin']==1) : ?>
-       <a href="/shop_slider/create" class="btn btn-dark round mb-5">Shop Slider create</a>
+       <a href="/admin/shop_slider/create" class="btn btn-dark round mb-5">Shop Slider create</a>
        <?php endif;?>
 </div>
 
@@ -40,10 +40,10 @@
 
                   <td>
                   <?php if(getAuthUser()['is_admin'] ==1):?>
-                    <a href="/shop_slider/edit?shop_id=<?= $shop_slider['shop_id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
+                    <a href="/admin/shop_slider/edit?shop_id=<?= $shop_slider['shop_id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
 
 
-                    <a href="/shop_slider/delete?shop_id=<?= $shop_slider['shop_id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
+                    <a href="/admin/shop_slider/delete?shop_id=<?= $shop_slider['shop_id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">

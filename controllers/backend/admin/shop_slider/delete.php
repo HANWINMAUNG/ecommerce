@@ -6,7 +6,7 @@ if(checkAuth()){
 $db = App::resolve(Database::class);
 
 
- $shop_slider=$db->query('select * from shop_sliders where id= :id ', ['id'=>$_GET['id']])->findOrFail();
+ $shop_slider=$db->query('SELECT * from shop_sliders where shop_id= :shop_id ', ['shop_id'=>$_GET['shop_id']])->findOrFail();
 
 view("backend/shop_slider/delete.view.php",['shop_slider'=>$shop_slider]);
 }

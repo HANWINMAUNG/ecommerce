@@ -52,7 +52,7 @@ if(empty($errors)){
         'status'=>$_POST['status']
     ]); 
     with('success','An account is successfully created!');
-   redirectTo('customer');
+   redirectTo('admin/customer');
 }else{
     view("backend/customer/create.view.php",["errors" => $errors]); 
 }

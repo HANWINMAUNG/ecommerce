@@ -27,10 +27,10 @@ if(empty($errors)){
         
     ]); 
     with('success','An account is successfully created!');
-   redirectTo('discount');
+   redirectTo('admin/discount');
 }else{
     withError($errors);
-    redirectTo('discount/create');
+    redirectTo('admin/discount/create');
 }
 ?>
 

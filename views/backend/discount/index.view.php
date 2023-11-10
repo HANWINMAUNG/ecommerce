@@ -3,7 +3,7 @@
      
        <h2>Discount</h2>
 <div class="text-right">
-       <a href="/discount/create" class="btn btn-dark round mb-5"> Discount Create </a>
+       <a href="/admin/discount/create" class="btn btn-dark round mb-5"> Discount Create </a>
 </div>
 
 
@@ -39,10 +39,10 @@
                   <td><?=$discount['amount']?></td>
                   <td>
                   <?php if(getAuthUser()['is_admin'] ==1):?>
-                    <a href="/discount/edit?id=<?= $discount['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
+                    <a href="/admin/discount/edit?id=<?= $discount['id']?>"  class="btn btn-warning btn-sm"><i data-feather="edit"></i></a>
                     
                      
-                    <a href="/discount/delete?id=<?= $discount['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
+                    <a href="/admin/discount/delete?id=<?= $discount['id']?>"  class="btn btn-danger btn-sm"><i data-feather="trash"></i></a>
                    <?php endif ;?>
                      <!-- <form action="/admin/accounts/delete" method="POST">
                   //     <input type="hidden" name="_method" value="DELETE">

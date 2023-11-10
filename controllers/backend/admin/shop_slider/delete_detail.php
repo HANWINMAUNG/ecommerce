@@ -12,5 +12,5 @@ $db->query("DELETE FROM shop_sliders WHERE id= :id", ['id'=>$id]);
 
 with('success','Delete is successfully!');
 
- redirectTo("shop_slider/edit?shop_id=$shop_id");
+ redirectTo("admin/shop_slider/edit?shop_id=$shop_id");
 

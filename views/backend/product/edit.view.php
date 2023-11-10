@@ -2,7 +2,7 @@
 <?php include (base_path("views/backend/layouts/header.view.php")); ?>
 <h3>Edit product</h3>
 <div class="text-right">
-       <a href="/product" class="btn btn-dark round mb-5">Back</a>
+       <a href="/admin/product" class="btn btn-dark round mb-5">Back</a>
 </div>
 
 
@@ -136,7 +136,7 @@
                      <p class="text-danger mt-2 mb-2">*Please must be select you profile!</p>
                      <div class="col-12 d-flex justify-content-center mt-2 ">
                         <button type="submit" class="btn btn-primary btn-sm mr-2">Confirm</button>
-                        <a href="/shop" class="btn btn-secondary btn-sm">Cancel</a>
+                        <a href="/admin/shop" class="btn btn-secondary btn-sm">Cancel</a>
                     </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 <?php include (base_path("views/backend/layouts/header.view.php")); ?>
 
-<div class="text-right mb-4"><a href="/discount" class="btn btn-dark round">Back</a></div>
+<div class="text-right mb-4"><a href="/admin/discount" class="btn btn-dark round">Back</a></div>
 
 <div class="col-12 col-md-12 ">
         <div class="card">
@@ -21,7 +21,7 @@
                             </div>
                     <?php endif ; ?>
 
-                <form class="form form-vertical"   method="POST" action="/discount" enctype="multipart/form-data">
+                <form class="form form-vertical"   method="POST" action="/admin/discount" enctype="multipart/form-data">
                 <div class="form-body">
                     <div class="row">
                     

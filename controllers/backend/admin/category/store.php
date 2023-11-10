@@ -29,9 +29,9 @@ if(empty($errors)){
                     ]); 
     
     with('success','An account is successfully created!');
-   redirectTo('category');
+   redirectTo('admin/category');
 }else{
     withError($errors);
-    redirectTo('category/create');
+    redirectTo('admin/category/create');
 }
 

@@ -30,7 +30,7 @@ if(empty($errors)){
     ]); 
     
     setSuccessMessage('successfully updated!');
-    redirectTo('category');
+    redirectTo('admin/category');
 
 }
 else{
@@ -39,4 +39,4 @@ else{
 } 
 
 setError($errors);
-   redirectTo('category/edit');
+   redirectTo('admin/category/edit');

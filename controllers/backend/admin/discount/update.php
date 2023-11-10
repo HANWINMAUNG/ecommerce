@@ -27,11 +27,11 @@ if (checkAuth()) {
         }
     
         with('success', 'An account is successfully updated!');
-        redirectTo('discount');
+        redirectTo('admin/discount');
    
 }
  else {
    setError($errors);
-   redirectTo( "discount/edit?id=".$POST['id']);
+   redirectTo( "admin/discount/edit?id=".$POST['id']);
  }
 

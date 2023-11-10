@@ -30,7 +30,7 @@
                         <div class="alert alert-danger"><?= $_SESSION['errors'][0] ?></div>
                         <?php endif; ?>
                     <form action="/admin/login" method="POST">
-                         <div class="form-group position-relative has-icon-left">
+                          <div class="form-group position-relative has-icon-left">
                          <label for="first-name-icon">Role</label>
                             <div class="position-relative mt-2 mb-2">
 
@@ -38,11 +38,11 @@
                                 <option value="1">Admin</option>
                                 <option value="0">Partner</option>
                             </select>
-                        </div>
+                        </div> 
 
                             <div class="form-group has-icon-left">
 
-                                <label for="email-id-icon">Email</label>
+                                <label for="email-id-icon">Username</label>
                                 <div class="position-relative">
                                     <input type="text"  name="email" class="form-control" placeholder="Email" id="email-id-icon">
                                     <div class="form-control-icon">

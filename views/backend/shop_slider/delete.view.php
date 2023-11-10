@@ -3,14 +3,14 @@
    
        <h3>Delete</h3>
 <div class="text-right">
-       <a href="/shop_slider" class="btn btn-dark round mb-5">Back</a>
+       <a href="/admin/shop_slider" class="btn btn-dark round mb-5">Back</a>
 </div>
 
 
 <div class="card">
                     <div class="card-content text-center">
                         <div class="card-body">
-                        <form method="POST" action="/shop_slider/destroy">
+                        <form method="POST" action="/admin/shop_slider/destroy">
                         <input type="hidden" name="_method" value="DELETE">
                       <input type="hidden" name="id" value="<?=$shop_slider['id']?>">
                             <h4 class="card-title mb-0 text-danger">Delete</h4>
@@ -18,7 +18,7 @@
                        <p class="card-text">Are you sure to delete<span class="text-primary"></span>?</p>
                         
                             <button type="submit" class="btn btn-primary btn-sm">Confirm</button>
-                            <a href="/shop_slider" class="btn btn-secondary btn-sm">Cancel</a>
+                            <a href="/admin/shop_slider" class="btn btn-secondary btn-sm">Cancel</a>
                       </form>
                             </div>
                         </div>

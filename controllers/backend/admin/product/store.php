@@ -59,9 +59,9 @@ if(empty($errors)){
     ]); 
     
     with('success','An account is successfully created!');
-   redirectTo('product');
+   redirectTo('admin/product');
 }else{
     withError($errors);
-    redirectTo('product/create');
+    redirectTo('admin/product/create');
 }
 

@@ -2,7 +2,7 @@
 <?php include (base_path("views/backend/layouts/header.view.php")); ?>
 <h3>Edit Shop</h3>
 <div class="text-right">
-       <a href="/shop" class="btn btn-dark round mb-5">Back</a>
+       <a href="/admin/shop" class="btn btn-dark round mb-5">Back</a>
 </div>
 
 
@@ -24,7 +24,7 @@
                             </div>
                     <?php endif ; ?>
 
-                <form class="form form-vertical"   method="POST" action="/shop" enctype="multipart/form-data">
+                <form class="form form-vertical"   method="POST" action="/admin/shop" enctype="multipart/form-data">
                 <input type="hidden" name="_method" value="PATCH">
             <input type="hidden" name="id" value="<?=$shop['id']?>">
                 <div class="form-body">
@@ -125,7 +125,7 @@
                      <p class="text-danger mt-2 mb-2">*Please must be select you profile!</p>
                      <div class="col-12 d-flex justify-content-center mt-2 ">
                         <button type="submit" class="btn btn-primary btn-sm mr-2">Confirm</button>
-                        <a href="/shop" class="btn btn-secondary btn-sm">Cancel</a>
+                        <a href="/admin/shop" class="btn btn-secondary btn-sm">Cancel</a>
                     </div>
                     </div>
                 </div>

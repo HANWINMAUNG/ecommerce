@@ -40,7 +40,8 @@ function session($key)
 function redirectTo($path='')
 {
     header("location: /{$path}");
-    exit();
+    
+    exit();  
 }
 
 function checkAuth()
@@ -52,6 +53,20 @@ function getAuthUser()
 {
     if (checkAuth()) {
         return $_SESSION['auth_user'];
+    }
+
+    return null;
+}
+
+function checkCus()
+{
+    return isset($_SESSION['auth_cus']);
+}
+
+function getAuthCus()
+{
+    if (checkCus()) {
+        return $_SESSION['auth_cus'];
     }
 
     return null;
@@ -86,4 +101,20 @@ function abort($code = 404)
     require base_path("views/{$code}.php");
 
     die();
+}
+
+function countCart(){
+    if($_SESSION['cart']) {
+        $quantity = array_column($_SESSION['cart'], 'quantity');
+
+     return  array_sum($quantity);
+    }
+
+    return 0;
+}
+
+function quantityCart($quantity,$price){
+
+     $quantity*$price=$total;
+
 }

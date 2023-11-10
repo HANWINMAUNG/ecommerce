@@ -2,7 +2,7 @@
 <?php include (base_path("views/backend/layouts/header.view.php")); ?>
 <h3>Edit Category</h3>
 <div class="text-right">
-       <a href="/category" class="btn btn-dark round mb-5">Back</a>
+       <a href="/admin/category" class="btn btn-dark round mb-5">Back</a>
 </div>
 
 
@@ -59,7 +59,7 @@
                      
                      <div class="col-12 d-flex justify-content-center mt-2 ">
                         <button type="submit" class="btn btn-primary btn-sm mr-2">Confirm</button>
-                        <a href="/category" class="btn btn-secondary btn-sm">Cancel</a>
+                        <a href="/admin/category" class="btn btn-secondary btn-sm">Cancel</a>
                     </div>
                     </div>
                 </div>

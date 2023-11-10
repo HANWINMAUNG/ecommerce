@@ -39,8 +39,8 @@ if (empty($errors)) {
     ]);
 
     with('success', 'An account is successfully created!');
-    redirectTo('shop');
+    redirectTo('admin/shop');
 } else {
     withError($errors);
-    redirectTo('shop/create');
+    redirectTo('admin/shop/create');
 }

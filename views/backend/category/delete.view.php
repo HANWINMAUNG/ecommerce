@@ -3,14 +3,14 @@
    
        <h3>Delete</h3>
 <div class="text-right">
-       <a href="/category" class="btn btn-dark round mb-5">Back</a>
+       <a href="/admin/category" class="btn btn-dark round mb-5">Back</a>
 </div>
 
 
 <div class="card">
                     <div class="card-content text-center">
                         <div class="card-body">
-                        <form method="POST" action="/category/destroy">
+                        <form method="POST" action="/admin/category/destroy">
                         <input type="hidden" name="_method" value="DELETE">
                       <input type="hidden" name="id" value="<?=$category['id']?>">
                             <h4 class="card-title mb-0 text-danger">Delete</h4>
@@ -18,7 +18,7 @@
                        <p class="card-text">Are you sure to delete<span class="text-primary"><?=$category['name']?></span>?</p>
                         
                             <button type="submit" class="btn btn-primary btn-sm">Confirm</button>
-                            <a href="/category" class="btn btn-secondary btn-sm">Cancel</a>
+                            <a href="/admin/category" class="btn btn-secondary btn-sm">Cancel</a>
                       </form>
                             </div>
                         </div>
